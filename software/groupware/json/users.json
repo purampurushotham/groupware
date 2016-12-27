@@ -1,0 +1,20 @@
+[
+  {
+    "name": "purushotham",
+    "email": "puram@gmail.com",
+    "password":"123",
+    "teamname":"team1",
+    "projectname":"qpp",
+    "filename":"post_data.txt",
+    "Role":"Employee"
+  },
+  {
+    "name": "abdul",
+    "email": "abdul@gmail.com"
+    "password":"123"
+    "teamname":"team2"
+    "projectname":"ipass"
+    "filename":"get_data.txt"
+    "Role":"Employee"
+  }
+]
