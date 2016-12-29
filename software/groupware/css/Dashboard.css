@@ -61,7 +61,7 @@ li a:hover:not(.active) {
     height: 75%;
 }
 /* login css */
-#login,#adduser {
+#login,#adduser,#edituser,#deleteuser {
     margin: 50px auto;
     width: 300px;
 
@@ -80,6 +80,7 @@ form fieldset input[type="email"], input[type="password"],input[type="text"] {
     padding: 0px 10px;
     width: 280px;
     -webkit-appearance:none;
+
 }
 form fieldset input[type="submit"] {
     background-color: #008dde;
@@ -206,4 +207,20 @@ table th {
     table td:last-child {
         border-bottom: 0;
     }
+
 }
+#dis
+{
+    text-align:center;
+    height: 25px;
+    width: 250px;
+    background-color:#46DAFF;
+    color:#000;
+}
+#tex
+{
+    width:120px;
+    float: left;
+    margin:10px;
+}
+div.users{display: none;}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GroupWare</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.js"
+            integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+
+    <!-- <script src="http://:code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script src="../js/add_users.js"></script>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+    <script src="../js/dashboard.js"></script>
+
+
+</head>
+<body class="G">
+<div class="G_title">
+    <img src="../img/groupware_logo.jpg" class="G_logo"/>
+</div>
+<div class="container">
+    <div class="g_nav">
+        <ul>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="users.html">Users</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a class="active" href="Admin.html">Admin</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </div>
+    <div class ="G_DashBoard">
+        <div class="g_users"><img src="../img/add_project.jpg" class="G_A" />Add  <span>0</span>
+        </div>
+        <div class="g_projects"><img src="../img/update_project.jpg" class="G_U" onclick=""/>Update <span>0</span></div>
+        <div class="g_files"><img src="../img/delete_project.jpg" class="G_D" onclick=/>Delete  <span>0</span></div>
+    </div>
+    <div id="adduser">
+        <h1><strong>Add Projects</strong></h1>
+        <form id="form" action ="demo.html">
+            <fieldset>
+                <p><input type="text" name="ProjectName" placeholder="ProjectName" ></p>
+                <p><input type="text" name="Duration" placeholder="Duration" ></p>
+                <p><input type="text" name="Assign"  placeholder="Assign"></p>
+                <p><input type="submit" value="Add Projects" id="save"/> </p>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        add_projects();
+    })
+</script>
+</body>
+</html>

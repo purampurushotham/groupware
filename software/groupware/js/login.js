@@ -1,5 +1,5 @@
 
-function validate() {
+function validate_login() {
     var e=document.getElementById("Email").value;
     var p=document.getElementById("Password").value;
     var email=function () {
