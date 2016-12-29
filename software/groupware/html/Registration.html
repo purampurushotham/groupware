@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GroupWare Users</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.js"
+            integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/JsonValues.js"></script>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+    <script src="../js/add_users.js"></script>
+
+
+    <!-- Latest compiled and minified CSS -->
+
+</head>
+<body>
+<div class="G_title">
+    <img src="../img/groupware_logo.jpg" class="G_logo"/>
+</div>
+<div id="login">
+    <h1><strong>Admin Registration</strong></h1>
+    <form id="form1" action ="Admin.html" >
+        <fieldset>
+            <p><input type="text" name="UserName" placeholder="UserName"  ></p>
+            <p><input type="email" name="Email" placeholder="Email" ></p>
+            <p><input type="password" name="Password" placeholder="password" ></p>
+            <p><input type="password" name="Confirm_Password" placeholder="Confirm_Password" ></p>
+            <p><input type="submit" value="Register" id="Add"/> </p>
+        </fieldset>
+    </form>
+</div>
+<script>
+    $(document).ready(function(){
+        registration();
+    });
+</script>
+
+</body>
+</html>

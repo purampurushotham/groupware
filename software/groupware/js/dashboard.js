@@ -5,7 +5,7 @@
 
  */
 function imageClick(url) {
-//    alert("hai");
+    alert("hai");
     window.location = url;
 
 }

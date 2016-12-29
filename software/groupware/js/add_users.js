@@ -2,10 +2,54 @@
  * Created by purushotham on 27-12-2016.
  */
 var validator;
+var registration=function() {
+   // alert("in add user");
+    validator = $("#form1").validate({
+        focusCleanup: true,
+        rules: {
+            UserName: {
+                required: true,
+                minlength: 5,
+            },
+            Password: {
+                required: true,
+                minlength: 5,
+            },
+            Confirm_Password: {
+                required: true,
+                minlenght: 5,
+                equalTo: "Password",
+            },
+            Email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            UserName: {
+                required: "enter a username",
+                minlength: "name should be of minimum 5 chars",
+            },
+            Email: {
+                required: "enter a email address",
+                email: "enter a valid email id",
+            },
+            Password: {
+                required: "please enter password",
+                minlength: "password must be more than 5 characters",
+            },
+            Confirm_Password:{
+                required: "please enter password",
+                minlength: "password must be more than 5 characters",
+                equalTo: "enter same password as above",
+            }
+        }
+    });
+}
 var add_Users = function(){
        // alert("hai");
         //$('input[name="Name"]')
-        alert("in add user");
+        //alert("in add user");
         validator=$("#form1").validate({
             focusCleanup:true,
             rules: {
@@ -88,7 +132,7 @@ var add_Users = function(){
 };
 //update user
 var update_user=function() {
-        alert("inedi user");
+        //alert("inedi user");
     validator= $("#form2").validate({
             focusCleanup:true,
             rules: {
@@ -211,8 +255,8 @@ var delete_user=function() {
 
 var add_projects = function(){
     // alert("hai");
-    $('input[name="Name"]')
-    $("#form").validate({
+    //$('input[name="Name"]')
+    $("#form1").validate({
         rules: {
             Duration:{
                 required:true,
@@ -251,7 +295,7 @@ var add_projects = function(){
 var add_files = function(){
     // alert("hai");
     //$('input[name="Name"]')
-    $("#form").validate({
+    $("#form1").validate({
         rules: {
             FileName:{
                 required:true,
@@ -280,15 +324,15 @@ var add_toggle=function () {
         //event.preventDefault();
       $(myelement).slideToggle('slow');
         if(myelement=="adduser"){
-           alert("in add user");
+           //alert("in add user");
             add_Users();
         }
         if(myelement == "edituser"){
-            alert("in update user");
+            //alert("in update user");
             update_user();
         }
         if(myelement == "deleteuser"){
-            alert("in delete user");
+            //alert("in delete user");
             delete_user();
         }
         $(".users:visible").not(myelement).hide();

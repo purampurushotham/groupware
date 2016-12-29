@@ -22,6 +22,10 @@
 <div class="G_title">
     <img src="../img/groupware_logo.jpg" class="G_logo"/>
 </div>
+<div>
+    <p class="logout" ><input type="button" value="Logout" onclick="imageClick('../html/index.html')"/> </p>
+</div>
+
 <div class="container">
     <div class="g_nav">
         <ul>
@@ -52,7 +56,6 @@
                 <p><input type="text" name="FileName" placeholder="FileName" ></p>
                 <p><input type="text" name="RoleName"  placeholder="RoleName"></p>
                 <p><input type="submit" value="Add" id="Add"/> </p>
-                <p><input type="button" class="cancel" value="cancel" id="Cancel"/> </p>
             </fieldset>
         </form>
     </div>
@@ -69,7 +72,7 @@
                 <p><input type="text" name="FileName" placeholder="FileName" ></p>
                 <p><input type="text" name="RoleName"  placeholder="RoleName"></p>
                 <p><input type="submit" value="Save" id="Save"/> </p>
-                <p><input type="button" class="cancel" value="cancel" id="Cancel"/> </p>
+
             </fieldset>
         </form>
     </div>
@@ -80,7 +83,7 @@
                 <p><input type="text" name="UserName" placeholder="UserName"  ></p>
                 <p><input type="email" name="Email" placeholder="Email" ></p>
                 <p><input type="submit" value="Remove" id="Remove"/> </p>
-                <p><input type="button" id="cancel" value="cancel" id="Cancel"/> </p>
+
             </fieldset>
         </form>
     </div>
@@ -98,10 +101,6 @@
     $(document).ready(function(){
         delete_user();
     });
-    $(document).ready(function(){
-        cancel_user();
-    });
-
 
 </script>
 </body>
