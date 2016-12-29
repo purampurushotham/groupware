@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GroupWare</title>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.slim.js"
+            integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+
+
+    <!-- <script src="http://:code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script src="../js/add_users.js"></script>
+    <link rel="stylesheet" href="../css/Dashboard.css">
+    <script src="../js/dashboard.js"></script>
+
+
+</head>
+<body class="G">
+<div class="G_title">
+    <img src="../img/groupware_logo.jpg" class="G_logo"/>
+</div>
+<div class="container">
+    <div class="g_nav">
+        <ul>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a class="active" href="users.html">Users</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="files.html">Files</a></li>
+            <li><a class="active" href="Admin.html">Admin</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </div>
+    <div class ="G_DashBoard">
+        <div class="g_users"><a href="#adduser"><img src="../img/add_user.jpg" class="G_A" />Add  <span>0</span></a></div>
+        <div class="g_projects"><a href="#edituser"> <img src="../img/update_user.jpg" class="G_U" />Update  <span>0</span></a></div>
+        <div class="g_files"><a href="#deleteuser"><img src="../img/delete_user.jpg" class="G_D" />Delete  <span>0</span></a></div>
+    </div>
+    <div class="users" id="adduser">
+        <h1><strong>Add Users</strong></h1>
+        <form id="form1" action ="demo.html" >
+            <fieldset>
+                <p><input type="text" name="UserName" placeholder="UserName"  ></p>
+                <p><input type="email" name="Email" placeholder="Email" ></p>
+                <p><input type="password" name="Password" placeholder="password" ></p>
+                <p><input type="password" name="Confirm_Password" placeholder="Confirm_Password" ></p>
+                <p><input type="text" name="TeamName" placeholder="TeamName"></p>
+                <p><input type="text" name="ProjectName" placeholder="ProjectName" ></p>
+                <p><input type="text" name="FileName" placeholder="FileName" ></p>
+                <p><input type="text" name="RoleName"  placeholder="RoleName"></p>
+                <p><input type="submit" value="Add" id="Add"/> </p>
+                <p><input type="button" class="cancel" value="cancel" id="Cancel"/> </p>
+            </fieldset>
+        </form>
+    </div>
+    <div class="users" id="edituser">
+        <h1><strong>Update Users</strong></h1>
+        <form id="form2" action ="demo.html" >
+            <fieldset>
+                <p><input type="text" name="UserName" placeholder="UserName"  ></p>
+                <p><input type="email" name="Email" placeholder="Email" ></p>
+                <p><input type="password" name="Password" placeholder="password" ></p>
+                <p><input type="password" name="Confirm_Password" placeholder="Confirm_Password" ></p>
+                <p><input type="text" name="TeamName" placeholder="TeamName"></p>
+                <p><input type="text" name="ProjectName" placeholder="ProjectName" ></p>
+                <p><input type="text" name="FileName" placeholder="FileName" ></p>
+                <p><input type="text" name="RoleName"  placeholder="RoleName"></p>
+                <p><input type="submit" value="Save" id="Save"/> </p>
+                <p><input type="button" class="cancel" value="cancel" id="Cancel"/> </p>
+            </fieldset>
+        </form>
+    </div>
+    <div class="users" id="deleteuser">
+        <h1><strong>Delete Users</strong></h1>
+        <form id="form3" action ="demo.html" >
+            <fieldset>
+                <p><input type="text" name="UserName" placeholder="UserName"  ></p>
+                <p><input type="email" name="Email" placeholder="Email" ></p>
+                <p><input type="submit" value="Remove" id="Remove"/> </p>
+                <p><input type="button" id="cancel" value="cancel" id="Cancel"/> </p>
+            </fieldset>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        add_toggle();
+    });
+        $(document).ready(function(){
+        add_Users();
+    });
+    $(document).ready(function(){
+        update_user();
+    });
+    $(document).ready(function(){
+        delete_user();
+    });
+    $(document).ready(function(){
+        cancel_user();
+    });
+
+
+</script>
+</body>
+</html>
